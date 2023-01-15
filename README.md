@@ -1,4 +1,4 @@
-     ```
+  
         author zyy
         
         cargo new wams-duck --lib
@@ -12,4 +12,3 @@
         npm run serve
 
         ssh-keygen -t rsa -C "zjon234@gmail.com"
-     ```
