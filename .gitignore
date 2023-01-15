@@ -1,3 +1,2 @@
 /node_modules
-/wasm-app/target
-/wasm-app/Cargo.lock
+
