@@ -1,19 +1,22 @@
-import { test_wasm } from "./wasm"
-import { reactjsx } from "./reactjsx"
-import { assembly } from "./reactAssembly"
-import { event } from "./reactEvent"
-import { demo_function } from "./demo";
-import { assembly_props } from "./assemblyProps";
+// import { test_wasm } from "./wasm"
+// import { reactjsx } from "./reactjsx"
+// import { assembly } from "./reactAssembly"
+// import { event } from "./reactEvent"
+// import { demo_function } from "./demo";
+// import { assembly_props } from "./assemblyProps";
+import { login } from "./login"
 
+// test_wasm();
 
-test_wasm();
+// reactjsx();
 
-reactjsx();
+// assembly();
 
-assembly();
+// event();
 
-event();
+// demo_function();
 
-demo_function();
+// assembly_props();
 
-assembly_props();
+login();
+
