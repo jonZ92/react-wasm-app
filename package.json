@@ -1,6 +1,7 @@
 {
   "name": "react-wasm-app",
   "version": "1.0.0",
+  "author": "zyy <zjon234@gmail.com>",
   "description": "",
   "main": "./app.js",
   "scripts": {
@@ -8,7 +9,6 @@
     "serve": "webpack-dev-server",
     "build": "webpack --config webpack.config.js"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/preset-env": "^7.20.2",
