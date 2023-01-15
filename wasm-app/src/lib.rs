@@ -40,5 +40,5 @@ pub fn get_string() -> String {
 
 #[wasm_bindgen]
 pub fn regret() -> String {
-    "后悔自己主动".to_string()
+    "后悔自己没主动".to_string()
 }
