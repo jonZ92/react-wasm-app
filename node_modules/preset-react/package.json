@@ -1,0 +1,24 @@
+{
+  "name": "preset-react",
+  "version": "1.0.0",
+  "description": "A Babel preset for modern react ap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Haithem Bel Haj",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "babel-plugin-macros": "^2.6.1",
+    "fast-async": "^6.3.8",
+    "react-hot-loader": "^4.9.0"
+  }
+}
