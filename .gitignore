@@ -2,3 +2,4 @@
 /wasm-app/target/
 /wasm-app/Cargo.lock
 /dist.tar.gz
+/dist

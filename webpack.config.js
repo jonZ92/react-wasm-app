@@ -1,4 +1,6 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     // 支持wasm
     experiments: {
@@ -34,5 +36,10 @@ module.exports = {
                 },
             },
         ],
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './index.html'
+        }),
+    ]
 };

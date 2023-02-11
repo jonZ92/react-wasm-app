@@ -33,12 +33,3 @@ pub fn receive_example_from_js(val: JsValue) -> Result<JsValue, JsValue> {
     Ok(serde_wasm_bindgen::to_value(&_example)?)
 }
 
-#[wasm_bindgen]
-pub fn get_string() -> String {
-    "hello-wasm".to_string()
-}
-
-#[wasm_bindgen]
-pub fn regret() -> String {
-    "后悔自己没主动".to_string()
-}
