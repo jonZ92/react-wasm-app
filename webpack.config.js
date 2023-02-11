@@ -1,10 +1,10 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     // 支持wasm
     experiments: {
-        asyncWebAssembly: true
+        asyncWebAssembly: true,
     },
     entry: "./src/app.js",
     output: {
@@ -13,11 +13,12 @@ module.exports = {
     },
     mode: "development",
     devServer: {
-        static: { // static: ['assets']
-            directory: path.join(__dirname, 'dist')
+        static: {
+            // static: ['assets']
+            directory: path.join(__dirname, "dist"),
         },
         //publicPath: '/dist/',
-        host: '0.0.0.0',
+        host: "0.0.0.0",
         port: 7070,
     },
     module: {
@@ -26,20 +27,28 @@ module.exports = {
                 test: /.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
+                    loader: "babel-loader",
                     options: {
                         presets: [
                             "@babel/preset-env",
-                            ["@babel/preset-react", { runtim: "automatic" }]
-                        ]
+                            ["@babel/preset-react", { runtim: "automatic" }],
+                        ],
                     },
                 },
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: "asset/resource",
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
             },
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html'
+            template: "./index.html",
         }),
-    ]
+    ],
 };

@@ -12,3 +12,5 @@
         npm run serve
 
         ssh-keygen -t rsa -C "zjon234@gmail.com"
+        
+        npm run build

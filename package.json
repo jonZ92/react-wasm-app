@@ -6,7 +6,7 @@
   "main": "./app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack-dev-server",
+    "dev": "webpack-dev-server",
     "build": "webpack --config webpack.config.js"
   },
   "license": "ISC",
@@ -25,6 +25,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^5.5.0"
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1"
   }
 }
