@@ -1,15 +1,16 @@
 import { wasm } from "./wasm"
 import ReactDOM from 'react-dom'
 import React from 'react'
-import { AppNav } from './nav'
+import "../index.css"
+
 
 class App extends React.Component {
     state = {}
     render() {
-        return (<div></div>)
+        return (<div className="login">
+            <div className="name"><input type="text" id="name-password" /></div>
+            <div className="password"><input type="text" id="name-password" /></div>
+        </div>)
     }
 }
-
-
-
 ReactDOM.render(<App />, document.getElementById("root"));

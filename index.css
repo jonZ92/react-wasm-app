@@ -1,15 +1,36 @@
-.navigation {
-    height: 100%;
-    width: 10%;
-}
-
-/* bod::after {
+body::after {
     content: "";
     background-image: url('./image/78.jpg');
-    opacity: 0.1;
+    opacity: 0.05;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-} */
+}
+
+.login {
+    width: 450px;
+    height: 300px;
+    background: rgb(124, 119, 119);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+}
+
+.name {
+    margin-top: 15%;
+    margin-left: 35%;
+}
+
+.password {
+    margin-top: 10%;
+    margin-left: 35%;
+}
+
+#name-password {
+    width: 230px;
+    height: 25px;
+}
+
