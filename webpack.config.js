@@ -21,9 +21,9 @@ module.exports = {
         host: "0.0.0.0",
         port: 7070,
         proxy: {
-            '/user': {
-                target: 'http://127.0.0.1:8001',
-                pathRewrite: { '^/user': '/user' }
+            '/app': {
+                target: 'http://127.0.0.1:12345',
+                pathRewrite: { '^/app': '/app' }
             }
         } ,
     },
