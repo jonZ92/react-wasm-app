@@ -22,7 +22,7 @@ module.exports = {
         port: 7070,
         proxy: {
             '/app': {
-                target: 'http://127.0.0.1:7080',
+                target: 'http://appServer',
                 pathRewrite: { '^/app': '/app' }
             }
         } ,
