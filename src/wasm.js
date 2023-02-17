@@ -1,4 +1,4 @@
-import * as wasm from "../wasm-app/pkg/wasm_app"
+import * as wasm from "wasm"
 
 
 export function test_wasm() {
