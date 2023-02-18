@@ -28,8 +28,9 @@ class App extends React.Component {
     getUser = () => {
         const username = this.state.userName;
         const password = this.state.userPassword;
+        const params = { userName: username, userPassword: password };
        // this.test_wasm();    
-        axios.post("/app/login?userName=" + username + "&userPassword=" + password).then(function (e) {
+        axios.post("/app/login", params(params)).then(function (e) {
                 console.log(e);
 
         });
