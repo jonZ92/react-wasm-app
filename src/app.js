@@ -50,7 +50,7 @@ class App extends React.Component {
     getUser = () => {
         const username = this.state.userName;
         const password = this.state.userPassword;
-        this.test_wasm();    
+       // this.test_wasm();    
         axios.get("/app/login").then(function (e) {
 
 
