@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
     // 支持wasm
     experiments: {
-        asyncWebAssembly: true,
+        //asyncWebAssembly: true,
         syncWebAssembly: true,
     },
     entry: "./src/app.js",
