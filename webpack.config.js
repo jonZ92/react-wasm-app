@@ -21,18 +21,18 @@ module.exports = {
         //publicPath: '/dist/',
         host: "0.0.0.0",
         port: 7070,
-        // proxy: {
-        //     '/app': {
-        //         target: 'http://appServer',
-        //         pathRewrite: { '^/app': '/app' }
-        //     }
-        // } ,
         proxy: {
             '/app': {
-                target: 'http://127.0.0.1:7080',
+                target: 'http://appServer',
                 pathRewrite: { '^/app': '/app' }
             }
-        },
+        } ,
+        // proxy: {
+        //     '/app': {
+        //         target: 'http://127.0.0.1:7080',
+        //         pathRewrite: { '^/app': '/app' }
+        //     }
+        // },
     },
     module: {
         rules: [
