@@ -1,7 +1,7 @@
 body::before {
     content: "";
     background-image: url('./image/78.jpg');
-    opacity: 0.5;
+    opacity: 0.1;
     position: absolute;
     top: 0;
     left: 0;
@@ -36,8 +36,8 @@ body::before {
 }
 
 .log-button {
-    width: 230px;
-    height: 25px;
+    width: 235px;
+    height: 27px;
     margin-top: 10%;
     margin-left: 30%;
 }
