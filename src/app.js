@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 import "../index.css"
 import axios from 'axios'
-import * as wasm from "../wasm-app/pkg/wasm_app"
+import * as wasm from "../wasm-app/pkg/wasm_app_bg"
 
 
 class App extends React.Component {
