@@ -5,6 +5,7 @@ module.exports = {
     // 支持wasm
     experiments: {
         asyncWebAssembly: true,
+        syncWebAssembly: true,
     },
     entry: "./src/app.js",
     output: {
@@ -55,9 +56,6 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
-            },
-            {
-                test:/\.wasm$/,
             },
         ],
     },
