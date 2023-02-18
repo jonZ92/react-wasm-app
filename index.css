@@ -1,7 +1,7 @@
-body {
+body::before {
     content: "";
     background-image: url('./image/78.jpg');
-    opacity: 1;
+    opacity: 0.5;
     position: absolute;
     top: 0;
     left: 0;
@@ -22,20 +22,22 @@ body {
 
 .name {
     margin-top: 15%;
-    margin-left: 35%;
+    margin-left: 30%;
 }
 
 .password {
     margin-top: 10%;
-    margin-left: 35%;
+    margin-left: 30%;
 }
 
 #name-password {
     width: 230px;
-    height: 25px;
+    height: 27px;
 }
 
-.log-button{
+.log-button {
+    width: 230px;
+    height: 25px;
     margin-top: 10%;
-    margin-left: 50%;
+    margin-left: 30%;
 }
