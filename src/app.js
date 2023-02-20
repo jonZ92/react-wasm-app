@@ -1,9 +1,9 @@
-//import { test_wasm } from "./wasm"
+import { test_wasm } from "./wasm"
 import ReactDOM from 'react-dom'
 import React from 'react'
 import "../index.css"
 import axios from 'axios'
-import * as wasm from "../wasm-app/pkg/wasm_app_bg"
+
 
 
 class App extends React.Component {
@@ -26,6 +26,7 @@ class App extends React.Component {
         })
     };
     getUser = () => {
+        test_wasm();
         const username = this.state.userName;
         const password = this.state.userPassword;
         const params = { userName: username, userPassword: password };
