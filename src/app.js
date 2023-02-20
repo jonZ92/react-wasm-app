@@ -14,18 +14,18 @@ class App extends React.Component {
     };
 
 
-    usernameput = (event) => {
+    username_save = (event) => {
         this.setState({
             userName: event.target.value,
         })
     };
-    passwordput = (event) => {
+    password_save = (event) => {
         this.setState({
 
             userPassword: event.target.value,
         })
     };
-    getUser = () => {
+    post_login = () => {
         test_wasm();
         const username = this.state.userName;
         const password = this.state.userPassword;
@@ -40,9 +40,9 @@ class App extends React.Component {
 
     render() {
         return (<div className="login">
-            <div className="name"><input type="text" id="name-password" value={this.state.username} onChange={this.usernameput} /></div>
-            <div className="password"><input type="text" id="name-password" value={this.state.password} onChange={this.passwordput} /></div>
-            <div><button className='log-button' onClick={() => this.getUser()}>点击登陆</button></div>
+            <div className="name"><input type="text" id="name-password" value={this.state.username} onChange={this.username_save} /></div>
+            <div className="password"><input type="text" id="name-password" value={this.state.password} onChange={this.password_save} /></div>
+            <div><button className='log-button' onClick={() => this.post_login()}>点击登陆</button></div>
         </div>)
     }
 }
