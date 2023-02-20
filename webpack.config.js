@@ -12,7 +12,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "./app.js",
     },
-    mode: "development",
+    mode: "production",
     devServer: {
         static: {
             // static: ['assets']
