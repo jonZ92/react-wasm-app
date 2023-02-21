@@ -50,6 +50,12 @@ module.exports = {
                 },
             },
             {
+                test:/\.wasm$/,
+                use:{
+                    loader:"file-loader",
+                    },
+            },
+            {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: "asset/resource",
             },
