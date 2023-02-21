@@ -51,9 +51,7 @@ module.exports = {
             },
             {
                 test:/\.wasm$/,
-                use:{
-                    loader:"wasm-loader",
-                    },
+                type:'webassembly/async',
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
