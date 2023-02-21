@@ -3,3 +3,4 @@
 /wasm-app/Cargo.lock
 /dist.tar.gz
 /dist
+/package-lock.json
