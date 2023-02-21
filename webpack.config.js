@@ -52,7 +52,7 @@ module.exports = {
             {
                 test:/\.wasm$/,
                 use:{
-                    loader:"file-loader",
+                    loader:"wasm-loader",
                     },
             },
             {
