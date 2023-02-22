@@ -1,0 +1,14 @@
+{
+  "name": "wasm-app",
+  "version": "0.1.0",
+  "license": "Unlicense",
+  "files": [
+    "wasm_app_bg.wasm",
+    "wasm_app.js",
+    "wasm_app_bg.js",
+    "wasm_app.d.ts"
+  ],
+  "module": "wasm_app.js",
+  "types": "wasm_app.d.ts",
+  "sideEffects": false
+}
