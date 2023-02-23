@@ -32,7 +32,7 @@ class App extends React.Component {
         const params = { userName: username, userPassword: password };
         // this.test_wasm();    
         axios.post("/app/login", params).then(function (e) {
-            console.log(e);
+            //console.log(e);
 
         });
 
